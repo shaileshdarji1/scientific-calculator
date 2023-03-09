@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            <input type="text" name="display" id="screen" placeholder="0">
+        </div>
+        <div class="row">
+            <button type="button" onclick="" class="btn-color">DEG</button>
+            <button type="button" onclick="" class="btn-color">F-E</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="" class="btn-color" disabled>MC</button>
+            <button type="button" onclick="" class="btn-color" disabled>MR</button>
+            <button type="button" onclick="" class="btn-color">M+</button>
+            <button type="button" onclick="" class="btn-color">M-</button>
+            <button type="button" onclick="" class="btn-color">MS</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="" class="trigonometry"><img src="images/right-angled-triangle.svg" width="20px" height="20px">Trigonometry<i class="fa-sharp fa-solid fa-angle-down"></i></button>
+            <button type="button" onclick="" class="function"><i class="fa-solid fa-florin-sign"></i>Function<i class="fa-sharp fa-solid fa-angle-down"></i></button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="" class="button">2<sup>nd</sup></button>
+            <button type="button" onclick="pi()" class="button">π</button>
+            <button type="button" onclick="e()" class="button">e</button>
+            <button type="button" onclick="allclear()" class="button">C</button>
+            <button type="button" onclick="del()" class="button"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="square()" class="button">x<sup>2</sup></button>
+                <button type="button" onclick="inverse()" class="button">1/x</button>
+                <button type="button" onclick="abs()" class="button">|x|</button>
+                <button type="button" onclick="exp()" class="button">exp</button>
+                <button type="button" onclick="input('%')" class="button">mod</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="sqrt()" class="button">&Sqrt;x</button>
+            <button type="button" onclick="input('&#40;')" class="button">(</button>
+            <button type="button" onclick="input('&#41;')" class="button">)</button>
+            <button type="button" onclick="factorial()" class="button">n!</button>
+            <button type="button" onclick="input('/')" class="button operator">&div;</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="input('**')" class="button">x<sup>y</sup></button>
+            <button type="button" onclick="input(7)" class="button bg-color">7</button>
+            <button type="button" onclick="input(8)" class="button bg-color">8</button>
+            <button type="button" onclick="input(9)" class="button bg-color">9</button>
+            <button type="button" onclick="input('*')" class="button operator">&times;</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="" class="button">10<sup>x</sup></button>
+            <button type="button" onclick="input(4)" class="button bg-color">4</button>
+            <button type="button" onclick="input(5)" class="button bg-color">5</button>
+            <button type="button" onclick="input(6)" class="button bg-color">6</button>
+            <button type="button" onclick="input('-')" class="button operator">-</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="" class="button">log</button>
+            <button type="button" onclick="input(1)" class="button bg-color">1</button>
+            <button type="button" onclick="input(2)" class="button bg-color">2</button>
+            <button type="button" onclick="input(3)" class="button bg-color">3</button>
+            <button type="button" onclick="input('+')" class="button operator">+</button>
+        </div>
+        <div class="row">
+            <button type="button" onclick="" class="button">ln</button>
+            <button type="button" onclick="" class="button bg-color" style="font-size: 14px;font-weight: 500;">+/-</button>
+            <button type="button" onclick="input(0)" class="button bg-color">0</button>
+            <button type="button" onclick="input('.')" class="button bg-color">.</button>
+            <button type="button" onclick="calc()" class="button operator" style="background-color:lightskyblue">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/39cee866b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="grid-container">
+            em2"><p>DEG</p></div>
+            em3"><p>F.E</p></div>
+            em4"><p>MR</p></div>
+            p>MC</p></div>
+            p>M+</p></div>
+            p>M-</p></div>
+            em5"><p>MS</p></div>
+            em6">Trigonometry</div>
+            em7"> <i class="fa-solid fa-florin-sign"></i>Function</div>
+            <button type="button" onclick="" class="button">2<sup>nd</sup></button> </div>
+            <button type="button" onclick="" class="button">π</button> </div>
+            <button type="button" onclick="" class="button">e</button> </div>
+            <button type="button" onclick="" class="button">C</button> </div>
+            <button type="button" onclick="" class="button"><i class="fa-solid fa-delete-left"></i></button> </div>
+            <button type="button" onclick="" class="button">x<sup>2</s up></button> </div>
+            <button type="button" onclick="" class="button">1/x</button> </div>
+            <button type="button" onclick="" class="button">|x|</button> </div>
+            <button type="button" onclick="" class="button">exp</button> </div>
+            <button type="button" onclick="" class="button">mod</button> </div>
+            <button type="button" onclick="" class="button">&Sqrt;x</button> </div>
+            <button type="button" onclick="" class="button">(</button> </div>
+            <button type="button" onclick="" class="button">)</button> </div>
+            <button type="button" onclick="" class="button">n!</button> </div>
+            erator"> <button type="button" onclick="" class="button">&div;</button> </div>
+            <button type="button" onclick="" class="button">x<sup>y</sup></button> </div>
+            em"> <button type="button" onclick="" class="button">7</button> </div>
+            em"> <button type="button" onclick="" class="button">8</button> </div>
+            em"> <button type="button" onclick="" class="button">9</button> </div>
+            erator"> <button type="button" onclick="" class="button">&times;</button> </div>
+             <button type="button" onclick="" class="button">10<sup>x</sup></button> </div>
+            em"> <button type="button" onclick="" class="button">4</button> </div>
+            em"> <button type="button" onclick="" class="button">5</button> </div>
+            em"> <button type="button" onclick="" class="button">6</button> </div>
+            erator"> <button type="button" onclick="" class="button">-</button> </div>
+            <button type="button" onclick="" class="button">log</button> </div>
+            em"> <button type="button" onclick="" class="button">1</button> </div>
+            em"> <button type="button" onclick="" class="button">2</button> </div>
+            em"> <button type="button" onclick="" class="button">3</button> </div>
+            erator"> <button type="button" onclick="" class="button">+</button> </div>
+            <button type="button" onclick="" class="button">ln</button> </div>
+            em"> <button type="button" onclick="" class="button">+/-</button> </div>
+            em"> <button type="button" onclick="" class="button">0</button> </div>
+            em"> <button type="button" onclick="" class="button">.</button> </div>
+            erator"> <button type="button" onclick="" class="button">=</button> </div>
+        </div> -->

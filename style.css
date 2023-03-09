@@ -1,0 +1,88 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 370px;
+    height: 615px;
+    margin: auto;
+    margin-top: 7%;
+    background-color: #f3f3f3;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+input{
+    background-color: #f3f3f3;
+    outline: none;
+    width: 360px;
+    font-size: 36px;
+    text-align: right;
+    margin: 8px;
+    border: none;
+}
+.display{
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: start;
+    margin-left: 5px;
+}
+.btn-color{
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+.trigonometry{
+  width: 135px;
+  display: flex;
+  background-color: #f3f3f3;
+}
+.trigonometry i{
+   margin-left: 5px;
+  }
+.trigonometry img{
+    margin-right: 5px;
+    padding-bottom: 5px;
+}  
+.function{
+    display: flex;
+  width: 110px;
+  background-color: #f3f3f3;
+}
+.function i{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+button{
+    
+    text-align: center;
+    width: 70px;
+    height: 45px;
+    padding: 10px;   
+    background-color: #f8f8f8;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    color: black;
+    border: none;
+    margin: 2px;
+}
+button:disabled{
+    color: gray;
+}
+button:hover{
+    background-color: lightskyblue;
+}
+.bg-color{
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.operator{
+    padding-top: 7px;
+    font-size: 28px;
+}
