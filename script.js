@@ -1,5 +1,12 @@
 let display = document.getElementById("screen");
 
+
+function deg() {
+    display.value = ((180 / Math.PI) * display.value).toFixed(2);
+}
+function fe() {
+    display.value = Number.parseFloat(display.value).toExponential();
+}
 function memoryclear() {
     localStorage.removeItem("memory");
     document.getElementById("memoryclear").disabled = true;
@@ -36,11 +43,11 @@ function trigonometry() {
 }
 function sin() {
     display.value = Math.sin(display.value * Math.PI / 180).toFixed(2);
-    
+
 }
 function cos() {
     display.value = Math.cos(display.value * Math.PI / 180).toFixed(2);
-    
+
 }
 function tan() {
     display.value = Math.tan(display.value * Math.PI / 180).toFixed(2);
@@ -51,7 +58,7 @@ function specialfunction() {
     document.getElementById("function").style.backgroundColor = "lightskyblue";
     document.getElementById("myDropdown1").style.display = "none";
     document.getElementById("trigonometry").style.backgroundColor = "#f3f3f3";
-    
+
 }
 function abs() {
     display.value = Math.abs(display.value).toFixed(2);
@@ -76,14 +83,8 @@ window.onclick = function (event) {
     }
 }
 
-function deg() {
-    display.value = ((180 / Math.PI) * display.value).toFixed(2);
-}
-function fe() {
-    display.value = Number.parseFloat(display.value).toExponential();
-}
-function twopower(){
-   display.value = Math.pow(2,display.value);
+function twopower() {
+    display.value = Math.pow(2, display.value);
 }
 function pi() {
     if (display.value.length === 0) {
